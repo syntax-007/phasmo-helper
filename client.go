@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	. "ghosts"
 )
 
@@ -10,5 +11,7 @@ func main() {
 	for _, g := range ghosts {
 		m[g.Name()] = g.Evidence()
 	}
+
+	fmt.Println(m)
 
 }
